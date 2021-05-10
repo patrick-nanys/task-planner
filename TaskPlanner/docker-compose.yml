@@ -1,0 +1,13 @@
+version: "2"
+services:
+  db:
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=taskplanner
+      - MYSQL_USER=springuser
+      - MYSQL_PASSWORD=dev-use-only
+    ports:
+      - 3306:3306
+    volumes:
+      - ./database:/var/lib/mysql

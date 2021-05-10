@@ -1,0 +1,55 @@
+.forfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+h1{
+display: flex;
+justify-content: center;
+}
+
+.toMiddle{
+display: flex;
+justify-content: center;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+}
+
+button{
+    color: white;
+    background-color: #537436;
+
+}
+
+.blackbrown{
+    color: black;
+}
+
+.blackbrown:hover{
+    color: brown;
+}
+
+.greybrown{
+    color: grey;
+}
+.greybrown:hover{
+    color: brown;
+}

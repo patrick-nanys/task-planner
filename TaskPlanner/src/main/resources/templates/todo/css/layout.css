@@ -1,0 +1,202 @@
+:root {
+    --hattermesszi: #537436;
+    --hatter: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #495057;
+    text-align: left;
+    background-color: var(--hattermesszi);
+}
+
+i {
+    font-style: italic;
+}
+
+.container {
+    margin-top: 100px;
+    /*width: 1200px;*/
+    min-height: 100%;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    box-shadow: 0 0.46875rem 2.1875rem rgba(4, 9, 20, 0.03), 0 0.9375rem 1.40625rem rgba(4, 9, 20, 0.03), 0 0.25rem 0.53125rem rgba(4, 9, 20, 0.05), 0 0.125rem 0.1875rem rgba(4, 9, 20, 0.03);
+    border-width: 0;
+    transition: all .2s;
+    background-color: var(--hatter);
+}
+
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+    font-size: larger;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0.625rem;
+    height: 3.5rem;
+    background-color: var(--hatter);
+}
+
+.widget-subheading {
+    color: #858a8e;
+    font-size: 10px
+}
+
+.card-header.card-header-tab .card-header-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.card-header .header-icon {
+    font-size: 1.65rem;
+    margin-right: 0.625rem
+}
+
+.card-header.card-header-tab .card-header-title {
+    display: flex;
+    align-items: center;
+    white-space: nowrap
+}
+
+.btn-actions-pane-right {
+    margin-left: auto;
+    white-space: nowrap
+}
+
+.text-capitalize {
+    text-transform: capitalize !important
+}
+
+.scroll-area-sm {
+    height: 420px;
+    overflow-x: hidden
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: var(--hatter);
+    border: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.todo-indicator {
+    position: absolute;
+    width: 4px;
+    height: 60%;
+    border-radius: 0.3rem;
+    left: 0.625rem;
+    top: 20%;
+    opacity: .6;
+    transition: opacity .2s
+}
+
+.bg-primary {
+    background-color: #f7246a !important
+}
+.bg-focus {
+    background-color: #2bf724 !important
+}
+.bg-warning {
+    background-color: #f7f424 !important
+}
+.bg-info {
+    background-color: #24bbf7 !important
+}
+.bg-success {
+    background-color: #f7ad24 !important
+}
+
+
+.widget-content {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center
+}
+
+.widget-content .widget-content-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center
+}
+
+.widget-content .widget-content-right.widget-content-actions {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s
+}
+
+.widget-content .widget-content-right {
+    margin-left: auto
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+.btn {
+    position: relative;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s
+}
+
+.btn-outline-success {
+    color: #3ac47d;
+    border-color: #3ac47d
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #3ac47d;
+    border-color: #3ac47d
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #363636;
+    border-color: #ffffff;
+}
+
+.btn {
+    position: relative;
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+    outline: none !important;
+    border-radius: 0.3rem;
+}
+
+.card-footer {
+    background-color: var(--hatter);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.forfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}

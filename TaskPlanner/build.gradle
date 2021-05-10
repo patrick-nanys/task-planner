@@ -1,0 +1,46 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id "io.freefair.lombok" version "6.0.0-m2"
+}
+
+group = 'com.kivik'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'javax.validation:validation-api'
+    implementation 'junit:junit:4.12'
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+//  implementation 'android.arch.work:work-runtime:1.0.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//    runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly 'com.h2database:h2'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+
+
+
+
+
+
+
+
